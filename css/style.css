@@ -38,6 +38,7 @@ h2 {
     padding: 10px 25px;
     border-radius: 10px;
     margin: auto;
+    white-space: nowrap;
 }
 
 
@@ -80,6 +81,7 @@ h2 {
 
 .anchor {
     position: relative;
+    padding-bottom: 300px;
 }
 
 /* ------------------------------------------------------- */
