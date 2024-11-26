@@ -79,12 +79,6 @@ h2 {
 
 /* ------------------------------------------------------- */
 
-.anchor {
-    padding-bottom: 300px;
-}
-
-/* ------------------------------------------------------- */
-
 .lego_card {
     width: 700px;
     margin: auto;
@@ -105,7 +99,19 @@ h2 {
 .top_card {
     display: flex;
     justify-content: space-between;
+    /*  */
+    align-items: center;
     padding-right: 20px;
+}
+
+.small {
+    width: 140px;
+    /* -------------- */
+    /* padding: 4px 0; */
+    font-weight: 700;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .heart-path {
@@ -169,11 +175,6 @@ h2 {
     padding-right: 5px;
     text-align: center;
     color: white;
-}
-
-.small {
-    width: 140px;
-    font-weight: 700;
 }
 
 .medium {
