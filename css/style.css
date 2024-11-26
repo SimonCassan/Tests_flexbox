@@ -80,23 +80,20 @@ h2 {
 /* ------------------------------------------------------- */
 
 .anchor {
-    position: relative;
     padding-bottom: 300px;
 }
 
 /* ------------------------------------------------------- */
 
 .lego_card {
+    width: 700px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 25px;
     margin-bottom: 50px;
     font-family: Cerapro, sans-serif;
-    position: absolute;
-    width: 700px;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 .lego_card img {
@@ -105,9 +102,24 @@ h2 {
     margin-right: 20px;
 }
 
+.top_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_card img {
+    width: 20px;
+    transition: transform 0.3s;
+}
+
+.top_card img:hover {
+    transform: scale(1.1);
+}
+
 .content_card {
     display: flex;
     padding: 20px;
+    position: relative;
 }
 
 .text_block {
