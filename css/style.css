@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn,
+.h3_green {
+    width: fit-content;
+    font-size: 45px;
+    display: flex;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+.btn {
+    background-color: red;
+    color: white;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.btn span {
+    margin-left: 15px;
+    padding-top: 3px;
+}
+
+
+.btn:hover {
+    background-color: rgb(255, 50, 50);
+    box-shadow: 5px 5px 5px rgb(255, 169, 169);
+}
+
+.btn:hover span {
+    margin-left: 25px;
+}
+
+.h3_green {
+    background-color: white;
+    border: 1px solid black;
+    color: green;
+}
+
+.h3_green img {
+    width: 50px;
+    object-fit: contain;
+    padding-right: 15px;
+}
