@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Article qui décrit les différentes planètes et géantes gazeuses du système solaire">
+    <link rel="preload" href="./src/planet_background.jpg" as="image">
     <title>Le système solaire</title>
     <link rel="shortcut icon" href="./src/icons/favicon_planet.png" type="image/png">
     <link rel="stylesheet" href="./css/solar-system_style.css">
@@ -14,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <img src="./src/icons/planet_icon.png" alt="planet icon">
+            <img class="logo" src="./src/icons/planet_icon.png" alt="planet icon">
             <ul>
                 <li><a href="#mercure">Mercure</a></li>
                 <li><a href="#venus">Vénus</a></li>
@@ -26,13 +27,13 @@
                 <li><a href="#neptune">Neptune</a></li>
             </ul>
         </nav>
-        <img src="" alt="">
+        <!-- <img src="./src/javier-miranda-nUsBA0isRyY-unsplash.jpg" alt=""> -->
         <h1>Le système solaire</h1>
     </header>
     <main>
-        <article id="mercure">
+        <div class="content" id="mercure">
             <img src="./src/placeholder_planet.png" alt="">
-            <div>
+            <article>
                 <h2>Mercure</h2>
                 <div class="planet_info">
                     <p class="type_t">Téllurique</p>
@@ -41,11 +42,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad quasi! Tempore, perferendis
                     recusandae rerum rem temporibus unde vero quam quas in, neque nulla impedit eaque, obcaecati at
                     optio eos.</p>
-            </div>
-        </article>
-        <article id="venus">
+            </article>
+        </div>
+        <div class="content" id="venus">
             <img src="./src/placeholder_planet.png" alt="">
-            <div>
+            <article>
                 <h2>Vénus</h2>
                 <div class="planet_info">
                     <p class="type_t">Téllurique</p>
@@ -54,11 +55,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad quasi! Tempore, perferendis
                     recusandae rerum rem temporibus unde vero quam quas in, neque nulla impedit eaque, obcaecati at
                     optio eos.</p>
-            </div>
-        </article>
-        <article id="terre">
+            </article>
+        </div>
+        <div class="content" id="terre">
             <img src="./src/placeholder_planet.png" alt="">
-            <div>
+            <article>
                 <h2>La Terre</h2>
                 <div class="planet_info">
                     <p class="type_t">Téllurique</p>
@@ -67,11 +68,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad quasi! Tempore, perferendis
                     recusandae rerum rem temporibus unde vero quam quas in, neque nulla impedit eaque, obcaecati at
                     optio eos.</p>
-            </div>
-        </article>
-        <article id="mars">
+            </article>
+        </div>
+        <div class="content" id="mars">
             <img src="./src/placeholder_planet.png" alt="">
-            <div>
+            <article>
                 <h2>Mars</h2>
                 <div class="planet_info">
                     <p class="type_t">Téllurique</p>
@@ -80,12 +81,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad quasi! Tempore, perferendis
                     recusandae rerum rem temporibus unde vero quam quas in, neque nulla impedit eaque, obcaecati at
                     optio eos.</p>
-            </div>
-        </article>
+            </article>
+        </div>
         <h2 class="asteroid">Ceinture d'astéroides</h2>
-        <article id="jupiter">
+        <div class="content" id="jupiter">
             <img src="./src/placeholder_planet.png" alt="">
-            <div>
+            <article>
                 <h2>Jupiter</h2>
                 <div class="planet_info">
                     <p class="type_g">Gazeuse</p>
@@ -94,11 +95,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad quasi! Tempore, perferendis
                     recusandae rerum rem temporibus unde vero quam quas in, neque nulla impedit eaque, obcaecati at
                     optio eos.</p>
-            </div>
-        </article>
-        <article id="saturne">
+            </article>
+        </div>
+        <div class="content" id="saturne">
             <img src="./src/placeholder_planet.png" alt="">
-            <div>
+            <article>
                 <h2>Saturne</h2>
                 <div class="planet_info">
                     <p class="type_g">Gazeuse</p>
@@ -107,11 +108,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad quasi! Tempore, perferendis
                     recusandae rerum rem temporibus unde vero quam quas in, neque nulla impedit eaque, obcaecati at
                     optio eos.</p>
-            </div>
-        </article>
-        <article id="uranus">
+            </article>
+        </div>
+        <div class="content" id="uranus">
             <img src="./src/placeholder_planet.png" alt="">
-            <div>
+            <article>
                 <h2>Uranus</h2>
                 <div class="planet_info">
                     <p class="type_g">Gazeuse</p>
@@ -120,11 +121,11 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad quasi! Tempore, perferendis
                     recusandae rerum rem temporibus unde vero quam quas in, neque nulla impedit eaque, obcaecati at
                     optio eos.</p>
-            </div>
-        </article>
-        <article id="neptune">
+            </article>
+        </div>
+        <div class="content" id="neptune">
             <img src="./src/placeholder_planet.png" alt="">
-            <div>
+            <article>
                 <h2>Neptune</h2>
                 <div class="planet_info">
                     <p class="type_g">Gazeuse</p>
@@ -133,42 +134,43 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ad quasi! Tempore, perferendis
                     recusandae rerum rem temporibus unde vero quam quas in, neque nulla impedit eaque, obcaecati at
                     optio eos.</p>
-            </div>
-        </article>
+            </article>
+        </div>
     </main>
     <footer>
-        <div>
-            <section>
-                <h2>Les Télluriques</h2>
-                <ul>
-                    <li><a href="#mercure">Mercure</a></li>
-                    <li><a href="#venus">Vénus</a></li>
-                    <li><a href="#terre">La Terre</a></li>
-                    <li><a href="#mars">Mars</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="f_giants">Les Gazeuses</h2>
-                <ul>
-                    <li><a href="#jupiter">Jupiter</a></li>
-                    <li><a href="#saturne">Saturne</a></li>
-                    <li><a href="#uranus">Uranus</a></li>
-                    <li><a href="#neptune">Neptune</a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Partenaires</h2>
-                <ul>
-                    <li><a href="#" target="_blank">Ciel & Espace</a></li>
-                    <li><a href="#" target="_blank">Le Journal du Ciel</a></li>
-                </ul>
-            </section>
-        </div>
-        <hr>
-        <div class="credits">
-            <p>Maquette réalisée dans un but futile par</p>
-            <a href="https://github.com/SimonCassan" aria-label="Lien vers le GitHub de l'auteur de la page"
-                target="_blank">CASSAN Simon</a>
+        <div class="footer">
+            <div class="ft_cols">
+                <section>
+                    <h2>Les Télluriques</h2>
+                    <ul>
+                        <li><a href="#mercure">Mercure</a></li>
+                        <li><a href="#venus">Vénus</a></li>
+                        <li><a href="#terre">La Terre</a></li>
+                        <li><a href="#mars">Mars</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="f_giants">Les Gazeuses</h2>
+                    <ul>
+                        <li><a href="#jupiter">Jupiter</a></li>
+                        <li><a href="#saturne">Saturne</a></li>
+                        <li><a href="#uranus">Uranus</a></li>
+                        <li><a href="#neptune">Neptune</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Partenaires</h2>
+                    <ul>
+                        <li><a href="#" target="_blank">Ciel & Espace</a></li>
+                        <li><a href="#" target="_blank">Le Journal du Ciel</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="credits">
+                <p>Maquette réalisée dans un but futile par</p>
+                <a href="https://github.com/SimonCassan" aria-label="Lien vers le GitHub de l'auteur de la page"
+                    target="_blank">CASSAN Simon</a>
+            </div>
         </div>
     </footer>
 </body>
