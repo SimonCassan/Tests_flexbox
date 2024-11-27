@@ -9,16 +9,23 @@ body {
 
 header,
 footer {
-    background-color: #264653;
+    background-color: #193642;
     color: white;
 }
 
 header h1 {
     text-align: center;
+    background-image: url('../src/planet_background.jpg');
+    background-size: cover;
+    padding: 50px 0;
 }
 
-footer,
-nav {
+main,
+main .content,
+nav,
+.footer,
+ul,
+.planet_info {
     display: flex;
 }
 
@@ -27,9 +34,8 @@ nav {
     padding: 1em 0;
 }
 
-nav img {
+nav .logo {
     width: 20px;
-    filter: invert(100%);
 }
 
 nav ul {
@@ -38,15 +44,13 @@ nav ul {
 }
 
 main {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 25%;
+    margin: 0 25% 20px;
 }
 
-main article {
-    display: flex;
-    gap: 30px;
+main .content {
+    gap: 50px;
     margin-bottom: 30px;
     padding-top: 40px;
 }
@@ -64,25 +68,30 @@ main article p {
     text-align: justify;
 }
 
-main article:nth-of-type(2n) {
+main .content:nth-of-type(2n) {
     flex-direction: row-reverse;
 }
 
 footer {
-    display: flex;
+    padding: 0 10%;
+}
+
+.footer {
     flex-direction: column;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-footer hr {
-    margin: 40px;
-}
-
-footer div:first-of-type {
+footer .ft_cols {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 150px;
+    border-bottom: 2px solid white;
+    margin-bottom: 2em;
+}
+
+footer .ft_cols section {
+    margin-bottom: 2em;
 }
 
 footer h2 {
@@ -107,7 +116,6 @@ footer .credits {
 
 ul {
     list-style-type: none;
-    display: flex;
 }
 
 a {
@@ -168,18 +176,17 @@ a:hover {
 }
 
 .f_giants:before {
-    left: -45px;
+    left: -75px;
 }
 
 .f_giants::after {
-    right: -45px;
+    right: -75px;
 }
 
 
 
 
 .planet_info {
-    display: flex;
     gap: 10px;
 }
 
