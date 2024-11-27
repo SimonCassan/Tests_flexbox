@@ -6,9 +6,25 @@
     padding: 0;
 }
 
+
+
 body {
     font-family: Roboto, sans-serif;
 }
+
+
+main,
+main .content,
+nav,
+.footer,
+footer,
+.ft_cols,
+.planet_info,
+ul {
+    display: flex;
+}
+
+
 
 header,
 footer {
@@ -23,17 +39,9 @@ header h1 {
     padding: 80px 0;
 }
 
-main,
-main .content,
-nav,
-.footer,
-ul,
-.planet_info {
-    display: flex;
-}
 
 nav {
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1em 0;
 }
 
@@ -52,11 +60,18 @@ main {
     margin: 0 25% 20px;
 }
 
+nav,
+footer {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
 main img {
-    height: 150px;
+    height: 200px;
 }
 
 main .content {
+    align-items: center;
     gap: 50px;
     margin-bottom: 30px;
     padding-top: 40px;
@@ -79,8 +94,21 @@ main .content:nth-of-type(2n) {
     flex-direction: row-reverse;
 }
 
-footer {
-    padding: 0 10%;
+main .asteroid h2 {
+    font-size: 30px;
+}
+
+main .content h2 {
+    font-size: 36px;
+}
+
+main .content p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+main .planet_info p {
+    letter-spacing: 3px;
 }
 
 .footer {
@@ -90,15 +118,19 @@ footer {
 }
 
 footer .ft_cols {
-    display: flex;
     justify-content: center;
-    gap: 150px;
     border-bottom: 2px solid white;
     margin-bottom: 2em;
 }
 
 footer .ft_cols section {
     margin-bottom: 2em;
+    padding: 0 6em;
+}
+
+footer .ft_cols section:nth-of-type(2) {
+    border-left: 2px solid #C4C4C4;
+    border-right: 2px solid #C4C4C4;
 }
 
 footer h2 {
@@ -162,40 +194,15 @@ a:hover {
     top: 50%;
     height: 3px;
     background: #000;
-    width: 325px;
+    width: 392px;
 }
 
 .asteroid:before {
-    left: -350px;
+    left: -420px;
 }
 
 .asteroid::after {
-    right: -350px;
-}
-
-
-
-
-.f_giants {
-    position: relative;
-}
-
-.f_giants:before,
-.f_giants:after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    width: 2px;
-    background: #C4C4C4;
-    height: 165px;
-}
-
-.f_giants:before {
-    left: -75px;
-}
-
-.f_giants::after {
-    right: -75px;
+    right: -420px;
 }
 
 
@@ -221,7 +228,6 @@ a:hover {
 }
 
 .type_g {
-    /* background-color: #816797; */
     background: linear-gradient(#816797, #51557E);
 }
 
