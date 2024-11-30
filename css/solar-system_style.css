@@ -16,6 +16,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+/* ------------------------------------------------------------------------------------ */
 
 main,
 main .content,
@@ -28,7 +29,7 @@ ul {
     display: flex;
 }
 
-
+/* ----------------------------------------------------------------------------------- */
 
 header,
 footer {
@@ -90,12 +91,12 @@ main img {
 main .content {
     align-items: center;
     gap: 50px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     padding-top: 40px;
 }
 
 main .content h2 {
-    font-size: 25px;
+    font-size: 36px;
 }
 
 main .content h2,
@@ -105,6 +106,8 @@ main .content p {
 
 main .content p {
     text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 main .content:nth-of-type(2n) {
@@ -115,19 +118,14 @@ main .asteroid h2 {
     font-size: 30px;
 }
 
-main .content h2 {
-    font-size: 36px;
-}
-
-main .content p {
-    font-size: 20px;
-    line-height: 30px;
-}
-
 main .planet_info p {
     letter-spacing: 3px;
 }
 
+footer {
+    justify-content: center;
+    margin-top: 40px;
+}
 
 footer a {
     color: #9F9F9F;
@@ -141,9 +139,7 @@ footer .ft_cols a {
     width: 100%;
 }
 
-footer {
-    justify-content: center;
-}
+
 
 .footer {
     flex-direction: column;
@@ -213,7 +209,7 @@ a:hover {
     text-align: center;
     font-size: 20px;
     position: relative;
-    margin: 40px 0;
+    margin: 60px 0;
 }
 
 .asteroid:before,
@@ -233,9 +229,6 @@ a:hover {
 .asteroid::after {
     right: -420px;
 }
-
-
-
 
 .planet_info {
     align-items: center;
@@ -305,7 +298,7 @@ a:hover {
     }
 
     .asteroid {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .asteroid:before,
@@ -320,7 +313,6 @@ a:hover {
     footer .ft_cols section:nth-of-type(2) {
         border: none;
     }
-
 }
 
 
@@ -356,7 +348,6 @@ a:hover {
     footer .ft_cols section {
         padding: 0 1em;
     }
-
 }
 
 @media (max-width: 550px) {
@@ -406,6 +397,10 @@ a:hover {
         font-size: 2em;
     }
 
+    .asteroid {
+        font-size: 2em;
+    }
+
     footer h2 {
         font-size: 1.1em;
     }
@@ -413,7 +408,6 @@ a:hover {
     .content>img {
         max-width: 55%;
     }
-
 }
 
 @media (max-width:390px) {
@@ -430,7 +424,4 @@ a:hover {
     footer h2 {
         font-size: 1em;
     }
-
-
-
 }
